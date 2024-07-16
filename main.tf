@@ -29,7 +29,7 @@ module "ACR" {
 }
 
 module "AKS" {
-  source      = "./AKS"
+  source      = "./PrivateAKS"
   K8s-version = var.K8s-version
   K8s-name    = var.K8s-name
   Node-RG     = var.K8s-Node-RG
